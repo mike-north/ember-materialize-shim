@@ -37,7 +37,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-material-design-icons-shim": "0.1.11",
     "ember-resolver": "^2.0.3",
-    "ember-suave": "4.0.0",
+    "ember-suave": "4.0.1",
     "ember-sublime": "0.0.9",
     "loader.js": "^4.0.1",
     "os-locale": "^1.4.0",
