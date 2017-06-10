@@ -1,14 +1,16 @@
-/* globals define, Materialize */
+if (typeof FastBoot === 'undefined') {
+  /* globals define, Materialize */
 
-(function() {
+  (function() {
 
-  function generateModule(name, values) {
-    define(name, [], function() {
-      'use strict';
+    function generateModule(name, values) {
+      define(name, [], function() {
+        'use strict';
 
-      return values;
-    });
-  }
+        return values;
+      });
+    }
 
-  generateModule('materialize', { 'default': Materialize });
-})();
+    generateModule('materialize', { 'default': Materialize });
+  })();
+}
