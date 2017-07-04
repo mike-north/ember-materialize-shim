@@ -1,6 +1,12 @@
 /* eslint-env node */
 'use strict';
 
+const path = require('path');
+const Funnel = require('broccoli-funnel');
+const Merge = require('broccoli-merge-trees');
+const fastbootTransform = require('fastboot-transform');
+const existsSync = require('exists-sync');
+
 let FONT_FILES = [
   'Roboto-Thin.woff2',
   'Roboto-Thin.woff',
@@ -39,13 +45,33 @@ module.exports = {
       });
     }
 
-    if (!process.env.EMBER_CLI_FASTBOOT && !(app.options['materialize-shim'] || {}).omitJS) {
-      app.import(`${app.bowerDirectory  }/materialize/dist/js/materialize.js`);
+    if (!(app.options['materialize-shim'] || {}).omitJS) {
+      app.import('vendor/materialize/materialize.js');
       app.import('vendor/materialize-shim.js', {
         exports: {
           materialize: ['default']
         }
       });
     }
+  },
+
+  treeForVendor(tree) {
+    let trees = [];
+
+    if (tree) {
+      trees.push(tree);
+    }
+
+    let materializePath = path.join(this.project.root, this.app.bowerDirectory, 'materialize', 'dist', 'js');
+    if (existsSync(materializePath)) {
+      let materializeTree = fastbootTransform(new Funnel(materializePath, {
+        files: ['materialize.js'],
+        destDir: 'materialize'
+      }));
+
+      trees.push(materializeTree);
+    }
+
+    return new Merge(trees);
   }
 };
