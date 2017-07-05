@@ -35,7 +35,7 @@
     "ember-load-initializers": "^1.0.0",
     "ember-material-design-icons-shim": "0.1.11",
     "ember-resolver": "^4.1.0",
-    "ember-source": "~2.13.0",
+    "ember-source": "~2.14.0",
     "ember-sublime": "0.0.9",
     "eslint-plugin-ember-suave": "^1.0.0",
     "loader.js": "^4.2.3",
