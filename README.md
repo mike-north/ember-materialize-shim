@@ -35,13 +35,14 @@ And import materialize javascript
 import Materialize from 'materialize';
 ```
 
-Optionally, you may omit the JavaScript component of Materialize, by customizing your `ember-cli-build.js`
+Optionally, you may omit the JavaScript component of Materialize and/or the (Roboto) fonts, by customizing your `ember-cli-build.js`
 
 ```js
 var app = new EmberApp(defaults, {
   ...
   'materialize-shim': {
-    omitJS: true
+    omitJS: true,
+    omitFonts: true
   }
 });
 ```

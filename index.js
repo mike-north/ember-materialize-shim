@@ -1,33 +1,18 @@
 /* eslint-env node */
 'use strict';
 
-const path = require('path');
 const Funnel = require('broccoli-funnel');
 const Merge = require('broccoli-merge-trees');
 const fastbootTransform = require('fastboot-transform');
 const existsSync = require('exists-sync');
 
-let FONT_FILES = [
-  'Roboto-Thin.woff2',
-  'Roboto-Thin.woff',
-  'Roboto-Thin.ttf',
-  'Roboto-Light.woff2',
-  'Roboto-Light.woff',
-  'Roboto-Light.ttf',
-  'Roboto-Regular.woff2',
-  'Roboto-Regular.woff',
-  'Roboto-Regular.ttf',
-  'Roboto-Medium.woff2',
-  'Roboto-Medium.woff',
-  'Roboto-Medium.ttf',
-  'Roboto-Bold.woff2',
-  'Roboto-Bold.woff',
-  'Roboto-Bold.ttf'
-];
+const utils = require('./utils.js');
 
-function fontPath(app, name) {
-  return `${app.bowerDirectory  }/materialize/dist/fonts/roboto/${  name}`;
-}
+/**
+ * @type {string}
+ */
+const MATERIALIZE_JS_FOLDER = utils.getMaterializePaths().jsDir;
+const FONTS_FOLDER = utils.getFontPaths().rootDir;
 
 module.exports = {
   name: 'ember-materialize-shim',
@@ -39,37 +24,48 @@ module.exports = {
     }
     this.app = app;
 
-    for (let i = 0; i < FONT_FILES.length; i++) {
-      app.import(fontPath(app, FONT_FILES[i]), {
-        destDir: 'assets'
-      });
-    }
-
     if (!(app.options['materialize-shim'] || {}).omitJS) {
       app.import('vendor/materialize/materialize.js');
-      app.import('vendor/materialize-shim.js', {
-        exports: {
-          materialize: ['default']
-        }
+      app.import('vendor/materialize-shim.js');
+    }
+
+    if (!(app.options['materialize-shim'] || {}).omitFonts) {
+      utils.getFontPaths().robotoFiles.forEach(font => {
+        app.import(`vendor/fonts/roboto/${font}`, {
+          destDir: 'assets'
+        });
       });
     }
   },
 
   treeForVendor(tree) {
-    let trees = [];
+    const trees = [];
 
     if (tree) {
       trees.push(tree);
     }
 
-    let materializePath = path.join(this.project.root, this.app.bowerDirectory, 'materialize', 'dist', 'js');
-    if (existsSync(materializePath)) {
-      let materializeTree = fastbootTransform(new Funnel(materializePath, {
-        files: ['materialize.js'],
-        destDir: 'materialize'
-      }));
+    if (existsSync(MATERIALIZE_JS_FOLDER)) {
+      const materializeJsTree = fastbootTransform(
+        new Funnel(MATERIALIZE_JS_FOLDER, {
+          files: ['materialize.js'],
+          destDir: 'materialize'
+        })
+      );
+      trees.push(materializeJsTree);
+    } else {
+      throw new Error(`Could not find materialize JS folder (${MATERIALIZE_JS_FOLDER})`);
+    }
 
-      trees.push(materializeTree);
+    if (existsSync(FONTS_FOLDER)) {
+      const fontsTree = fastbootTransform(
+        new Funnel(FONTS_FOLDER, {
+          destDir: 'fonts'
+        })
+      );
+      trees.push(fontsTree);
+    } else {
+      throw new Error(`Could not find fonts folder (${FONTS_FOLDER})`);
     }
 
     return new Merge(trees);

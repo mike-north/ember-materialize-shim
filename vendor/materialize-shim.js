@@ -1,5 +1,5 @@
+/* global define, Materialize, FastBoot */
 if (typeof FastBoot === 'undefined') {
-  /* globals define, Materialize */
 
   (function() {
 

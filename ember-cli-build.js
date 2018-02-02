@@ -1,13 +1,13 @@
 'use strict';
-
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+const getMaterializePaths = require('./utils.js').getMaterializePaths;
+
+const MATERIALIZE_SASS_FOLDER = getMaterializePaths().sassDir;
 
 module.exports = function(defaults) {
   let app = new EmberAddon(defaults, {
     sassOptions: {
-      includePaths: [
-        'bower_components/materialize/sass'
-      ]
+      includePaths: [MATERIALIZE_SASS_FOLDER]
     }
   });
 
