@@ -35,7 +35,7 @@
     "ember-export-application-global": "2.0.0",
     "ember-load-initializers": "1.1.0",
     "ember-material-design-icons-shim": "0.1.12",
-    "ember-resolver": "4.5.6",
+    "ember-resolver": "5.0.1",
     "ember-source": "3.0.0-beta.4",
     "ember-sublime": "0.0.9",
     "eslint-plugin-ember": "5.2.0",
