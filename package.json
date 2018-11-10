@@ -65,7 +65,7 @@
     "android"
   ],
   "dependencies": {
-    "broccoli-funnel": "1.2.0",
+    "broccoli-funnel": "2.0.1",
     "broccoli-merge-trees": "3.0.1",
     "ember-cli-babel": "6.17.2",
     "ember-cli-htmlbars": "3.0.1",
