@@ -2137,7 +2137,7 @@ bower-endpoint-parser@0.2.2:
   resolved "https://registry.yarnpkg.com/bower-endpoint-parser/-/bower-endpoint-parser-0.2.2.tgz#00b565adbfab6f2d35addde977e97962acbcb3f6"
   integrity sha1-ALVlrb+rby01rd3pd+l5Yqy8s/Y=
 
-bower@^1.8.4:
+bower@1.8.4:
   version "1.8.4"
   resolved "https://registry.yarnpkg.com/bower/-/bower-1.8.4.tgz#e7876a076deb8137f7d06525dc5e8c66db82f28a"
   integrity sha1-54dqB23rgTf30GUl3F6MZtuC8oo=
@@ -4375,7 +4375,7 @@ ember-router-generator@^1.2.3:
   dependencies:
     recast "^0.11.3"
 
-ember-source-channel-url@^1.0.1, ember-source-channel-url@^1.1.0:
+ember-source-channel-url@1.1.0, ember-source-channel-url@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ember-source-channel-url/-/ember-source-channel-url-1.1.0.tgz#73de5cc6ebc25b2120e932ec1d8f82677bfaf6ef"
   integrity sha512-y1RVXmyqrdX6zq9ZejpPt7ohKNGuLMBEKaOUyxFWcYAM5gvLuo6xFerwNmXEBbu4e3//GaoasjodXi6Cl+ddUQ==
@@ -4414,7 +4414,7 @@ ember-try-config@^3.0.0:
     rsvp "^4.8.1"
     semver "^5.5.0"
 
-ember-try@^1.0.0:
+ember-try@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ember-try/-/ember-try-1.1.0.tgz#194d5843a79b5a9fc0e4c07445ebc18c08a91e78"
   integrity sha512-NL1rKPz2LuyVEqwoNV+SQD4c2w1/A0rrdeT6jqTYqlt/P7y3+SWcsxyReBnImebaIu7Drtz6p9yiAsrJq5Chyg==
@@ -10555,7 +10555,7 @@ sane@^4.0.0:
     walker "~1.0.5"
     watch "~0.18.0"
 
-sass@^1.14.3:
+sass@1.14.3:
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.14.3.tgz#b8e73fee303ab97aa4ca84b8251862257e610095"
   integrity sha512-yMpd6lYHSXX9JQ0nZzzHNa+7OuAehP7eUMOom18Z6WaITyyE+hXyKYSzsFspFotMszbwXQxfytSSJVPjEUzglg==
