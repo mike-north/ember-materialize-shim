@@ -49,7 +49,7 @@
     "eslint-plugin-node": "8.0.0",
     "husky": "1.1.4",
     "loader.js": "4.7.0",
-    "sass": "1.14.3"
+    "sass": "1.15.0"
   },
   "keywords": [
     "ember-addon",
