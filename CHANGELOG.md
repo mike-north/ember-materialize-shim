@@ -1,3 +1,12 @@
+## [0.6.18](https://github.com/levanto-financial/ember-materialize-shim/compare/v0.6.17...v0.6.18) (2019-10-01)
+
+
+### Bug Fixes
+
+* **deps:** stable ember infrastructure ([c41498f](https://github.com/levanto-financial/ember-materialize-shim/commit/c41498f))
+* **deps:** stable ember infrastructure ([549aae4](https://github.com/levanto-financial/ember-materialize-shim/commit/549aae4))
+* **deps:** stable ember infrastructure ([1d6e33e](https://github.com/levanto-financial/ember-materialize-shim/commit/1d6e33e))
+
 ## [0.6.17](https://github.com/levanto-financial/ember-materialize-shim/compare/v0.6.16...v0.6.17) (2019-08-29)
 
 
