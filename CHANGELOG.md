@@ -1,3 +1,11 @@
+## [0.6.19](https://github.com/levanto-financial/ember-materialize-shim/compare/v0.6.18...v0.6.19) (2019-10-09)
+
+
+### Bug Fixes
+
+* **deps:** ember-cli-htmlbars ([46d1610](https://github.com/levanto-financial/ember-materialize-shim/commit/46d1610))
+* **deps:** stable ember infrastructure ([9f4f6c5](https://github.com/levanto-financial/ember-materialize-shim/commit/9f4f6c5))
+
 ## [0.6.18](https://github.com/levanto-financial/ember-materialize-shim/compare/v0.6.17...v0.6.18) (2019-10-01)
 
 
