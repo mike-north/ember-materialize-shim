@@ -69,8 +69,8 @@
   "dependencies": {
     "broccoli-funnel": "^2.0.1",
     "broccoli-merge-trees": "3.0.2",
-    "ember-cli-babel": "7.13.0",
-    "ember-cli-htmlbars": "4.1.0",
+    "ember-cli-babel": "7.13.2",
+    "ember-cli-htmlbars": "4.1.1",
     "ember-cli-sass": "^10.0.0",
     "exists-sync": "0.1.0",
     "fastboot-transform": "0.1.3"
