@@ -4736,10 +4736,10 @@ ember-cli-htmlbars-inline-precompile@^1.0.0:
     heimdalljs-logger "^0.1.9"
     silent-error "^1.1.0"
 
-ember-cli-htmlbars@4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-4.3.0.tgz#841b16f59076b13664a2bb9b8e94902f35c3c18c"
-  integrity sha512-/UlxHqKWEw8xDDANleh1onLK0ekJ54Ky76tl0XG2+Uo5TqFzLB8U9WMQhjbitBlV/CnMQc08ujZB+vAWvegdvQ==
+ember-cli-htmlbars@4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-4.3.1.tgz#4af8adc21ab3c4953f768956b7f7d207782cb175"
+  integrity sha512-CW6AY/yzjeVqoRtItOKj3hcYzc5dWPRETmeCzr2Iqjt5vxiVtpl0z5VTqHqIlT5fsFx6sGWBQXNHIe+ivYsxXQ==
   dependencies:
     "@ember/edition-utils" "^1.2.0"
     babel-plugin-htmlbars-inline-precompile "^3.0.1"
@@ -5096,10 +5096,10 @@ ember-source-channel-url@^1.0.1:
   dependencies:
     got "^8.0.1"
 
-ember-source@3.17.1:
-  version "3.17.1"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.17.1.tgz#00838403bd5d5234181f54024987a84206d57d1f"
-  integrity sha512-Nvgb8dpfZ70+WTooW1N9dBx2XjyKSN/uC7M6dr914rVua+3NgqOy2pej/RyCNjAZkQA8lRdCxh4NNytWTocK5Q==
+ember-source@3.17.3:
+  version "3.17.3"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.17.3.tgz#315b198848bcc1699928579b2d7fc2d607ebf63e"
+  integrity sha512-mZ2a4MRJm+QsZ61q7p4Ulq+07IERgEF7mEzOPmqES+J4PpeXyWHAYh1MnSWHz3W5jQhwHQAPs6WTZE0TbAsS2Q==
   dependencies:
     "@babel/helper-module-imports" "^7.8.3"
     "@babel/plugin-transform-block-scoping" "^7.8.3"
