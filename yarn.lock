@@ -4743,10 +4743,10 @@ ember-cli-eslint@5.1.0:
     rsvp "^4.6.1"
     walk-sync "^1.0.0"
 
-ember-cli-fastboot@2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-fastboot/-/ember-cli-fastboot-2.2.2.tgz#db7fdab8b5b37bb2ae2541790701527231029c25"
-  integrity sha512-j3pCxBRZdZIRVtfzbQ9TqkR0LLmnxa4Isjns9HD/ZnO7u8uzWfYmncqqJbgIwcWHHG8v6x8opNeYnx99WQhy9g==
+ember-cli-fastboot@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/ember-cli-fastboot/-/ember-cli-fastboot-2.2.3.tgz#d32eba948b2790ec4b5429ff759a8dee932c1e55"
+  integrity sha512-RdKzTOXHi59VW6a9RB0muCQd15BmY95pWkQ9eLslyeLR38/Uh1EVP+kgWxzJTxODywmMJ9SWW2HPpvxxLDfCEw==
   dependencies:
     broccoli-concat "^3.7.1"
     broccoli-file-creator "^2.1.1"
@@ -5429,10 +5429,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-ember@8.9.0:
-  version "8.9.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-8.9.0.tgz#010f720665b00847df151d5ae64f41e4671c825a"
-  integrity sha512-wSZuQM5AkDBc/FRL7jAIMVPQxzXSMUBgzGYzxhLNc4HOSBKVu6qqh2XZg7PTUmhst39VdYjDvep9QHmeRWdLkA==
+eslint-plugin-ember@8.9.1:
+  version "8.9.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-8.9.1.tgz#6d76440bd7bb1954ed61c7ebbb1a1cd8c8e1afa6"
+  integrity sha512-A7TFksLfLLoQEWOHCvJX6SvxxL99yDEPwDZIh28TOgwsPsXpVYJNk22UT5ZrufUyVtdnOH4IsF3jIkRIIE91IA==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     ember-rfc176-data "^0.3.13"
