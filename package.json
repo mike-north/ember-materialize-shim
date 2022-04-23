@@ -51,7 +51,7 @@
     "husky": "2.4.1",
     "loader.js": "4.7.0",
     "semantic-release": "15.12.5",
-    "sass": "1.15.3"
+    "sass": "1.50.1"
   },
   "keywords": [
     "ember-addon",
